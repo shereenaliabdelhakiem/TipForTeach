@@ -184,6 +184,10 @@ section.commitment{
     left: 0;
 }
 /* feature */
+.features{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
 .features h3{
     font-weight: 600;
     color: var(--green-color);
@@ -212,8 +216,12 @@ section.commitment{
 /* donate section */
 .donates{
     /* background: linear-gradient(0deg, rgba(255,255,255,1)0%, #f1ca38c4 100%); */
-    background: #335E4A;
-    color: var(--white-color);
+    /* background-color: #335E4A; */
+    /* background-color: #f1ca38d6; */
+    background-color: #f1ca38cc;
+    background-image: url(../img/bg_pattern_banner.png);
+    /* color: var(--white-color); */
+    color: var(--text-color);
     padding-top: 54px;
     padding-bottom: 73px;
     display: flex;
@@ -224,6 +232,11 @@ section.commitment{
     /* margin-bottom: 100px; */
     position: relative;
     overflow: hidden;
+    background-size: cover;
+}
+.earth{
+    top: 60px;
+    right: 60px;
 }
 .light_light {
     left: -200px;
@@ -237,13 +250,15 @@ section.commitment{
     right: 0;
     top: 0;
 }
-.donates .left_shadow{
-    left: 0;
-    bottom: 0;
+.left_shadow{
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.donates .right_shadow{
-    right: 0;
-    bottom: 0;
+.right_shadow{
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .donate_lamp{
     bottom: 40px;
@@ -257,6 +272,7 @@ section.commitment{
 }
 .donates p{
     font-size: 24px;
+    font-weight: 600;
     margin-top: 12px;
 }
 /* footer */
@@ -929,7 +945,7 @@ tbody tr:nth-child(odd){
     border-bottom: 1px solid #F5F5F5;
 }
 /*=== checkout page ===*/
-.check-out, .form-page, .features, .contact-section{
+.check-out, .form-page, .contact-section{
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--section-color);
