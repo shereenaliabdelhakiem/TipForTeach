@@ -225,6 +225,10 @@ section.commitment{
     position: relative;
     overflow: hidden;
 }
+.light_light {
+    left: -200px;
+    top: 130px;
+}
 .donates .left_circles{
     left: 0;
     top: 0;
