@@ -214,7 +214,6 @@ section.commitment{
     /* background: linear-gradient(0deg, rgba(255,255,255,1)0%, #f1ca38c4 100%); */
     background: #335E4A;
     color: var(--white-color);
-    border-radius: 14px;
     padding-top: 54px;
     padding-bottom: 73px;
     display: flex;
