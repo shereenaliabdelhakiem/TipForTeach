@@ -200,9 +200,6 @@ section.commitment{
 }
 .feature:hover{
     background-color: #f1ca38c4;
-    /* h6, p{
-        color: var(--white-color);
-    } */
 }
 .feature h6{
     font-size: 16px;
@@ -211,6 +208,53 @@ section.commitment{
 }
 .feature p{
     color: var(--text-color);
+}
+/* donate section */
+.donates{
+    /* background: linear-gradient(0deg, rgba(255,255,255,1)0%, #f1ca38c4 100%); */
+    background: #335E4A;
+    color: var(--white-color);
+    border-radius: 14px;
+    padding-top: 54px;
+    padding-bottom: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.donates .left_circles{
+    left: 0;
+    top: 0;
+}
+.donates .right_circles{
+    right: 0;
+    top: 0;
+}
+.donates .left_shadow{
+    left: 0;
+    bottom: 0;
+}
+.donates .right_shadow{
+    right: 0;
+    bottom: 0;
+}
+.donate_lamp{
+    bottom: 40px;
+    right: 20%;
+    width: 100px;
+}
+.donates h4{
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 32px;
+}
+.donates p{
+    font-size: 20px;
+    margin-top: 12px;
 }
 /* footer */
 footer{

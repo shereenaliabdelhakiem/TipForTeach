@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--header-->
-      <header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
               <a class="navbar-brand" href="index.html"><img src="img/tip4teach_-_JPEG-01-removebg-preview 7.png" alt=""></a>
@@ -44,9 +44,9 @@
               </div>
             </div>
         </nav>
-      </header>
+    </header>
       <!--New Hero Section-->
-      <section class="hero-section new_hero">
+    <section class="hero-section new_hero">
         <div class="container">
           <div class="hero_text">
             <h2>Express appreciation for teachers</h2>
@@ -56,11 +56,11 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
     <!--features-->
     <section class="features container">
       <h3 class="text-lg-center mb-3 mb-lg-5">Our Special Features</h3>
-      <div class="row justify-content-lg-center ">
+      <div class="row justify-content-lg-center">
         <div class="col-lg-3 col-md-4 col-12 mb-4 mb-md-0">
           <div class="feature text-center first-ftr">
             <img src="img/image 7.png" class="mb-2" alt="Expert Advice">
@@ -85,6 +85,17 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="donates container position-relative">
+      <img src="img/left_circles.svg" class="position-absolute left_circles" alt="circles">
+      <img src="img/right_circles.svg" class="position-absolute right_circles" alt="circles">
+      <img src="img/left-shadow.png" class="position-absolute right_shadow" alt="shadow">
+      <img src="img/right-shadow.png" class="position-absolute left_shadow" alt="shadow">
+      <img src="img/idea-lamp.png" class="position-absolute donate_lamp" alt="idea lamp">
+      <img src="img/donate-box.png" class="donate_img" alt="donate">
+      <h4><span id="number1" class="js-num">35</span>,000</h4>
+      <p>AB tests launched <br> (and counting) since 2006</p>
+      
     </section>
     <!--footer-->
     <footer>
@@ -132,5 +143,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <!--custom js-->
     <script src="js/script.js"></script>
+    <script>
+      var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          $(".js-num").each(countUp);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.5,
+    });
+    observer.observe(document.querySelector(".js-num"));
+    function countUp() {
+      var num = $(this).text();
+      var decimal = 0;
+      if (num.indexOf(".") > 0) {
+        decimal = num.toString().split(".")[1].length;
+      }
+      $(this)
+        .prop("Counter", 1)
+        .animate(
+          {
+            Counter: $(this).text()
+          },
+          {
+            duration: 2000,
+            easing: "swing",
+            step: function (now) {
+              $(this).text(parseFloat(now).toFixed(decimal));
+            }
+          }
+        );
+    }
+</script>
 </body>
 </html>
