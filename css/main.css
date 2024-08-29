@@ -343,6 +343,74 @@ section.commitment{
     padding-top: 60px;
     padding-bottom: 80px;
 }
+/******************************** single blog page ********************************/
+.single_blog{
+    background-color: #f3f4d3;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-inline: 200px;
+}
+.single_blog h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: var(--dark-green-color);
+}
+.single_blog p{
+    font-size: 18px;
+    margin-top: 20px;
+    color: var(--text-alt-color);
+}
+.single_blog .img-container{
+    text-align: center;
+}
+.single_blog .img-container img{
+    border-radius: 24px;
+    height: 600px;
+    margin-inline: auto;
+}
+.share_links a img{
+    display: inline-block;
+    max-width: 40px;
+    margin-right: 8px;
+}
+.share_links{
+    margin-bottom: 24px;
+}
+.comment_section{
+    width: fit-content;
+}
+.comment_section span{
+    font-size: 15px;
+    color: #0d01013d;
+}
+.comment_section h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--dark-green-color);
+}
+.comment_section input, .comment_section textarea{
+    background: transparent;
+    min-width: 400px;
+}
+.comment_section .form-control:focus{
+    box-shadow: none;
+    background: transparent;
+}
+.comment_section input:first-child{
+    margin-bottom: 24px;
+}
+.comment_section textarea{
+    margin-left: 24px;
+}
+.comment_section button{
+    margin-top: 12px;
+    border-radius: 4px;
+}
+.single_blog hr{
+    color: #7ecfaa;
+}
 /* footer */
 footer{
     background-color: var(--text-color);
