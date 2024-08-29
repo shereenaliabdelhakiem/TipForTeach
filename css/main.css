@@ -375,7 +375,7 @@ section.commitment{
     margin-right: 8px;
 }
 .share_links{
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 .comment_section{
     width: fit-content;
@@ -400,6 +400,9 @@ section.commitment{
 }
 .comment_section input:first-child{
     margin-bottom: 24px;
+}
+.single_blog p:last-of-type{
+    margin-bottom: 32px;
 }
 .comment_section textarea{
     margin-left: 24px;
