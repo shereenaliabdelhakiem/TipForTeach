@@ -481,11 +481,10 @@ section.commitment{
     left: 0;
     width: 0;
     height: 8px;
-    border-top-right-radius: 32px;
-    border-bottom-right-radius: 32px;
     background-color: var(--dark-green-color);
     z-index: 9999;
-    /* transition: all 0.2s ease-in-out; */
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
 .blog_video{
     padding-bottom: 40px;

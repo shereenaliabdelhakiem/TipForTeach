@@ -214,21 +214,18 @@
           targetElement.scrollIntoView({ behavior: 'smooth' });
         });
       });
-      // Get the progress bar element
-      const progressBar = document.getElementById('progress-bar');
+        const progressBar = document.getElementById('progress-bar');
+        function updateProgressBar() {
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const progress = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-      // Function to update the progress bar width
-      function updateProgressBar() {
-          const scrollTop = window.pageYOffset;
-          const windowHeight = window.innerHeight;
-          const documentHeight = document.documentElement.scrollHeight;
-          const progress = (scrollTop / (documentHeight - windowHeight)) * 100;
+            progressBar.style.width = `${progress}%`;
+        }
 
-          progressBar.style.width = `${progress}%`;
-      }
-
-      // Add scroll event listener
-      window.addEventListener('scroll', updateProgressBar);
+        // Add scroll event listener
+        window.addEventListener('scroll', updateProgressBar);
     </script>
 </body>
 </html>
