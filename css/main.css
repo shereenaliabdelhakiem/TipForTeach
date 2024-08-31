@@ -473,6 +473,7 @@ section.commitment{
 }
 .get_in_touch .butn{
     margin-top: 20px;
+    border-radius: 4px;
 }
 #progress-bar {
     position: fixed;
