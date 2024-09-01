@@ -361,7 +361,7 @@ section.commitment{
     min-width: 250px;
 }
 .single_blog_links li:not(:last-child){
-    padding-bottom: 20px;
+    padding-bottom: 32px;
 }
 .blog_upper_text p{
     font-weight: 600;
@@ -402,7 +402,7 @@ section.commitment{
 }
 .blog_share_social h5{
     color: var(--text-color);
-    margin-top: 32px;
+    margin-top: 52px;
     margin-bottom: 22px;
     font-size: 15px;
     font-weight: bold;
